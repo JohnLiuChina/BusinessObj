@@ -1,0 +1,125 @@
+[INFO] [2019-04-26 09:43:53][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization started
+[INFO] [2019-04-26 09:43:53][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Fri Apr 26 09:43:53 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 09:43:53][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2019-04-26 09:43:53][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-26 09:43:53][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization completed in 470 ms
+[WARN] [2019-04-26 10:28:03][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:28:32][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:28:35][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:30:03][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:30:05][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:30:06][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:30:06][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:30:06][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:30:06][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[INFO] [2019-04-26 10:30:29][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO] [2019-04-26 10:30:29][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Apr 26 10:30:29 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 10:30:29][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mybatis.xml]
+[ERROR] [2019-04-26 10:30:29][org.springframework.web.context.ContextLoader]Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring-mybatis.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:216)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:540)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:454)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:800)
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:444)
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:791)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:294)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1349)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:296)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1342)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:505)
+	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:365)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:163)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.maven.plugin.JettyServer.doStart(JettyServer.java:73)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:534)
+	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:357)
+	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:167)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
+Caused by: java.io.FileNotFoundException: class path resource [spring-mybatis.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:158)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 64 more
+[WARN] [2019-04-26 10:30:56][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:38:36][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/MavenDemo03/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:38:53][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/Login/login.do] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 10:42:05][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/login.do] in DispatcherServlet with name 'spring-mvc'
+[INFO] [2019-04-26 10:49:12][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization started
+[INFO] [2019-04-26 10:49:12][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'SpringMVC-servlet': startup date [Fri Apr 26 10:49:12 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 10:49:12][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2019-04-26 10:49:12][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-26 10:49:12][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'SpringMVC': initialization completed in 535 ms
+[WARN] [2019-04-26 10:49:36][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'SpringMVC'
+[WARN] [2019-04-26 10:49:50][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'SpringMVC'
+[WARN] [2019-04-26 10:50:10][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'SpringMVC'
+[INFO] [2019-04-26 10:52:20][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization started
+[INFO] [2019-04-26 10:52:20][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Fri Apr 26 10:52:20 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 10:52:20][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2019-04-26 10:52:20][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-26 10:52:21][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization completed in 597 ms
+[INFO] [2019-04-26 10:52:37][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization started
+[INFO] [2019-04-26 10:52:37][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Fri Apr 26 10:52:37 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 10:52:37][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2019-04-26 10:52:37][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-26 10:52:37][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization completed in 528 ms
+[INFO] [2019-04-26 10:55:07][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization started
+[INFO] [2019-04-26 10:55:07][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Fri Apr 26 10:55:07 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 10:55:07][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2019-04-26 10:55:07][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-26 10:55:07][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization completed in 557 ms
+[INFO] [2019-04-26 11:03:32][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization started
+[INFO] [2019-04-26 11:03:32][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'spring-mvc-servlet': startup date [Fri Apr 26 11:03:32 CST 2019]; root of context hierarchy
+[INFO] [2019-04-26 11:03:32][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc.xml]
+[INFO] [2019-04-26 11:03:32][org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+[INFO] [2019-04-26 11:03:32][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'spring-mvc': initialization completed in 544 ms
+[WARN] [2019-04-26 11:34:21][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/user/test] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 11:34:29][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 11:37:05][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/BusinessObj/home/hello] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 11:57:29][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'spring-mvc'
+[WARN] [2019-04-26 11:57:30][org.springframework.web.servlet.PageNotFound]No mapping found for HTTP request with URI [/user/test] in DispatcherServlet with name 'spring-mvc'
