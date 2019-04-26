@@ -10,7 +10,7 @@ public class LoginController {
 
     @RequestMapping(value = "/hello")
     public void hello(){
-       System.out.println("接收到请求 ，Hello");
+       System.out.println("接收到请求 ，Hello!");
        
     }
 
